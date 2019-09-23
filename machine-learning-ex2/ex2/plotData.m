@@ -12,13 +12,14 @@ figure; hold on;
 %               examples and 'ko' for the negative examples.
 %
 
+% store indices of positive and negative examples
+posInd = find(y == 1);
+negInd = find(y == 0);
 
+% Plot points
+plot(X(posInd, 1), X(posInd, 2), 'k+');
 
-
-
-
-
-
+plot(X(negInd, 1), X(negInd, 2), 'ko');
 
 % =========================================================================
 

@@ -33,6 +33,9 @@ X = data(:, [1, 2]); y = data(:, 3);
 fprintf(['Plotting data with + indicating (y = 1) examples and o ' ...
          'indicating (y = 0) examples.\n']);
 
+% X - m samples, indicated by # rows
+% First col: Exam 1 scores
+% Second col: Exam 2 scores
 plotData(X, y);
 
 % Put some labels 
